@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Lecteur audio</title>
+</head>
+<body>
+  <h1>🎵 Ma musique</h1>
+  <!-- Lecteur audio standard -->
+  <audio controls>
+    <source src="musique.mp3" type="audio/mpeg">
+    Votre navigateur ne supporte pas la balise audio.
+  </audio>
+<script>
+  const audio = new Audio('musique.mp3');
+  // Lecture au clic sur un bouton
+  document.getElementById('playBtn').addEventListener('click', () => {
+    audio.play();
+  });
+</script>
+</body>
+</html>
